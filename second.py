@@ -70,8 +70,6 @@ def print_top(songs_data, count):
 def main():
     songs_data = read_csv('songs_new.csv')
     songs_data = quicksort(songs_data[1:], 0, len(songs_data[1:]))
-    # for i in songs_data:
-    #     print(i)
     print_top(songs_data, 5)
     
  
